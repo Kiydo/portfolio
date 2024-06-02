@@ -3,7 +3,7 @@ import ProfilePic from '../media/photos/pf_pic.png';
 
 export default function ProfilePicture() { 
     return (
-        <div className='bg-day-three'>
+        <div className='bg-day-two'>
             <Image src={ProfilePic} className="max-w-6/12" alt="Profile Picture"/>
         </div>
     );

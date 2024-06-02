@@ -10,6 +10,12 @@ import ReactLogo from '../media/photos/react-logo.png';
 import HTMLLogo from '../media/photos/html5.png';
 import CSSLogo from '../media/photos/css-logo.png';
 
+import UnityLogo from '../media/photos/unity-logo.png';
+import FireBase from '../media/photos/firebase-logo.png';
+import DockerLogo from '../media/photos/docker-logo.png';
+import AndroidStudio from '../media/photos/android-studio.webp';
+import MariaDB from '../media/photos/maria-db.png';
+
 export default function TechSkillsList() {
     const technologies = [
         { name: 'Python', logo: Python },
@@ -21,21 +27,24 @@ export default function TechSkillsList() {
         { name: 'React', logo: ReactLogo },
         { name: 'HTML', logo: HTMLLogo },
         { name: 'CSS', logo: CSSLogo },
+        { name: 'Unity', logo: UnityLogo },
+        { name: 'Firebase', logo: FireBase },
+        { name: 'Docker', logo: DockerLogo },
+        { name: 'Android Studio', logo: AndroidStudio },
+        { name: 'MariaDB', logo: MariaDB }
       ];
 
       return (
-        <div className='bg-day-two'>
-            <h1 className='text-4xl font-bold mx-0 text-center sm:mb-0 text-fixed-day-one'>Programming Languages and Technologies</h1>
-            <div className='flex flex-col sm:flex-row justify-between items-center px-4 py-4 sm:mx-20'>
-                <div className='flex flex-wrap space-x-8 sm:space-x-12'>
-                    {technologies.map((tech, index) => (
-                        <div key={index} className='flex flex-col items-center'>
-                            <Image src={tech.logo} alt={tech.name} width={50} height={50} />
-                            <p className='text-day-one'>{tech.name}</p>
-                        </div>
-                    ))}
-                </div>
+        <div className='my-12 bg-day-two'>
+            <h1 className='text-4xl font-bold mx-0 text-center sm:mb-8 text-day-three font-serif italic'>Programming Languages and Technologies</h1>
+            <div className='grid grid-cols-2 sm:grid-cols-4 lg:grid-cols-8 gap-8 p-2'>
+                {technologies.map((tech, index) => (
+                    <div key={index} className='flex flex-col items-center'>
+                        <Image src={tech.logo} alt={tech.name} width={50} height={50} />
+                        <p className='text-day-one mt-2 text-day-three'>{tech.name}</p>
+                    </div>
+                ))}
             </div>
         </div>
-      )
+    )
 }
