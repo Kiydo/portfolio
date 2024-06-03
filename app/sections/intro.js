@@ -1,6 +1,7 @@
 import React from 'react';
 import ProfilePicture from '../_components/profilePicture';
 import TechSkillsList from '../_components/techSkillsList';
+import ElseWhere from '../_components/elseWhereLinks';
 import { useContextProvider } from "@/app/_utils/globalContext";
 
 export default function Intro() { 
@@ -21,5 +22,6 @@ export default function Intro() {
                 <ProfilePicture />
             </div>
         </div>
+        
     );
 }

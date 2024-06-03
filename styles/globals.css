@@ -60,9 +60,17 @@ body {
 .text-day-two {
   color: #90ADC6;
 }
+
 .text-day-three {
   color: #333652;
 }
+.text-day-three-hoverable {
+  color: #333652;
+}
+.text-day-three-hoverable:hover {
+  color: #90ADC6;
+}
+
 .text-day-trim {
   color: #FAD02C;
 }
