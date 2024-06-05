@@ -3,15 +3,15 @@ import React, { useEffect, useState } from 'react';
 import FadeInIcon from './fadeInIcon';
 import Image from 'next/image';
 
-import GitHub from '../media/photos/linkIcons/github-mark.png';
-import LinkedIn from '../media/photos/linkIcons/in-logo.png';
-import Email from '../media/photos/linkIcons/email.png';
+// import GitHub from '/media/photos/linkIcons/github-mark.png';
+// import LinkedIn from '/media/photos/linkIcons/in-logo.png';
+// import Email from '/media/photos/linkIcons/email.png';
 
 export default function ElseWhereLinks() {
     const icons = [
-        { name: 'GitHub', icon: GitHub, url: 'https://github.com/Kiydo' },
-        { name: 'LinkedIn', icon: LinkedIn, url: 'https://www.linkedin.com/in/edward-magtoto-964b711a0/?trk=opento_sprofile_goalscard' },
-        { name: 'Email', icon: Email, url: 'mailto:e.magtoto@hotmail.com' }
+        { name: 'GitHub', icon: '/media/photos/linkIcons/github-mark.png', url: 'https://github.com/Kiydo' },
+        { name: 'LinkedIn', icon: '/media/photos/linkIcons/in-logo.png', url: 'https://www.linkedin.com/in/edward-magtoto-964b711a0/?trk=opento_sprofile_goalscard' },
+        { name: 'Email', icon: '/media/photos/linkIcons/email.png', url: 'mailto:e.magtoto@hotmail.com' }
     ];
 
     return (
