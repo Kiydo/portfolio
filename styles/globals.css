@@ -75,3 +75,12 @@ body {
   color: #FAD02C;
 }
 
+/* TRANSITIONS */
+.hover-transition {
+  transform: scale(1);
+  transition: transform 300ms;
+}
+.hover-transition:hover {
+  transform: scale(1.1);
+}
+
