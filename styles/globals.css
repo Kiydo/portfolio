@@ -43,6 +43,13 @@ body {
 .bg-day-three {
   background-color: #333652;
 }
+.bg-day-three-hoverable {
+  background-color: #333652;
+}
+.bg-day-three-hoverable:hover {
+  background-color: #90ADC6;
+}
+
 .bg-day-trim {
   background-color: #FAD02C;
 }

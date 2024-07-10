@@ -75,9 +75,15 @@ export default function ProjectCapstone() {
                         <ScreenSlider screenshots={screenShots} />
 
                         <div className='flex flex-col text-center items-center mt-8'>
-                            <p>Status: Database Offline</p>
-                            <p>Website Link: https://gwn-temporary.vercel.app/</p>
-                            <p>Github Link: https://github.com/pltduchoang/GWNTemporary</p>
+                            {/* <p>Status: Database Offline</p> */}
+                            <div className='flex space-x-2'>
+                                <p>Website Link:  </p>
+                                <a href='https://gwn-temporary.vercel.app/'> https://gwn-temporary.vercel.app/</a>
+                            </div>
+                            <div className='flex space-x-2'>
+                                <p>Github Link:  </p>
+                                <a href='https://github.com/pltduchoang/GWNTemporary'>https://github.com/pltduchoang/GWNTemporary</a>
+                            </div>
                         </div>
                     </FadeInIcon>
                 </div>
